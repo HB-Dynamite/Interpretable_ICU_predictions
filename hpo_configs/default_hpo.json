@@ -1,0 +1,92 @@
+{
+    "XGB": {
+        "n_estimators": [100],
+        "max_depth":[6],
+        "n_jobs": [-1],
+        "seed": [1991],
+        "random_state": [1991],
+        "_comments": {
+            "n_estimators": "Number of boosting rounds and trees. It's usually set to a large value (e.g., 1000 or more) and then tuned later through cross-validation.",
+            "learning_rate (or eta)": "Common starting values are around 0.01 to 0.1. Lower values require more boosting rounds but may lead to better generalization.",
+            "max_depth": "Values between 3 and 10 are often used. Shallower trees are less likely to overfit, especially when you have a large number of features.",
+            "subsample": "Values typically range from 0.5 to 1.0. Lower values introduce more stochasticity and can prevent overfitting.",
+            "colsample_bytree (or colsample_bylevel)": "Values between 0.5 and 1.0 are common. Similar to subsample, lower values reduce overfitting risk.",
+            "gamma": "A starting value of 0 is often used. Increase it if you want to be more conservative.",
+            "min_child_weight": "A small value (e.g., 1) is often a reasonable starting point. Increase it if you want more regularization.",
+            "scale_pos_weight": "Use this parameter when you have imbalanced classes. The value should be the ratio of the number of negative samples to positive samples.",
+            "max_delta_step": "maximum delta step each tress weight estimation to be",
+            "base_score": "initial prediction score of all instances (global bias)",
+            "reg_alpha": "L1 regularization term. A starting value of 0 is common, but you can try small values (e.g., 0.1) to add some regularization.",
+            "reg_lamda": "L2 regularization term. A starting value of 0 is common, but you can try small values (e.g., 0.1) to add some regularization.",
+            "random_state / seed": "not sure which sets the random state thus both are fixed"
+        }
+    },
+    "EBM": {
+        "interactions": [0],
+        "random_state": [1991],
+        "n_jobs": [-1],
+        "_comments": {
+            "max_bins": "Max number of bins per feature for the main effects stage",
+            "max_interaction": "Max number of bins per feature for interaction terms",
+            "learning_rate": "Learning rate for boosting",
+            "early_stopping_rounds": "Number of rounds with no improvement to trigger early stopping",
+            "min_samples_leaf": "Minimum number of leaves alloewd in each tree",
+            "max_leaves": "Maximum number of leaves allowed in each tree",
+            "objective": "Objective to optimize",
+            "n_jobs": "Number of jobs to run in parallel",
+            "outer_bags": "Number of outer bags. Outer bags are used to generate errror bounds and help with smoothing the graphs"
+        }
+    },
+    "IGANN": {
+        "n_estimators": [5000],
+        "n_hid": [10],
+        "elm_alpha": [0.3],
+        "elm_scale": [1],
+        "init_reg": [0.2],
+        "early_stopping": [30],
+        "boost_rate": [0.1],
+        "random_state": [1991],
+        "device": ["cpu"],
+        "act": ["elu"],
+        "verbose": [0]
+    },
+    "PYGAM": {
+        "lam": [0.6],
+        "n_splines": [25],
+        "_comments": "PYGAM has no random_state or seed?"
+    },
+    "LR": {
+        "penalty": ["l2"],
+        "C": [1.0],
+        "fit_intercept": [true],
+        "solver": ["liblinear"],
+        "random_state": [1991]
+    },
+    "LinReg": {
+        "fit_intercept": [true],
+        "n_jobs": [-1]
+    },
+    "MLP": {
+        "hidden_layer_sizes": [
+            [100],
+            [1]
+        ],
+        "activation": ["relu"],
+        "learning_rate": ["constant"],
+        "early_stopping": [true],
+        "random_state": [1991]
+    },
+    "RF": {
+        "n_estimators": [100],
+        "max_depth": [10],
+        "class_weight": ["balanced"],
+        "random_state": [1991]
+    },
+    "DT": {
+        "max_depth": [10],
+        "max_leaf_nodes": [10],
+        "class_weight": ["balanced"],
+        "splitter": ["best"],
+        "random_state":[1991]
+    }
+}
