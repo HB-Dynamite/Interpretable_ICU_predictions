@@ -36,7 +36,7 @@ This repository supports the research paper titled "Leveraging Interpretable Mac
    python scripts/experiment_X.py
 ```
 
-##Structure: 
+## Structure: 
 TUDD-data-analysis/
 ├── data/
 │   └── raw/
