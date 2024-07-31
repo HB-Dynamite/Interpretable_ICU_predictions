@@ -37,19 +37,19 @@ This repository supports the research paper titled "Leveraging Interpretable Mac
 ```
 
 ## Structure: 
-TUDD-data-analysis/ <\br>
-├── data/
-│   └── raw/
-│       └── MIMIC/
-│           └── mimic_complete.csv
-├── hpo_configs/
-├── logging/
-├── output/
-├── resutls/
-├── scripts/
-│   ├── experiment_1.py
-│   ├── experiment_2.py
-│   └── ...
-├── env.yml
-├── README.md
-└── ...
+TUDD-data-analysis/ <br>
+├── data/<br>
+│   └── raw/<br>
+│       └── MIMIC/<br>
+│           └── mimic_complete.csv<br>
+├── hpo_configs/<br>
+├── logging/<br>
+├── output/<br>
+├── resutls/<br>
+├── scripts/<br>
+│   ├── experiment_1.py<br>
+│   ├── experiment_2.py<br>
+│   └── ...<br>
+├── env.yml<br>
+├── README.md<br>
+└── ...<br>
