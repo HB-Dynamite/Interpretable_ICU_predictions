@@ -15,7 +15,7 @@ This repository supports the research paper titled "Leveraging Interpretable Mac
 
 1. Obtain access to the MIMIC-III database via [PhysioNet](https://physionet.org/).
 2. Follow the instructions provided in the edited version of the MIMIC-III benchmark suite by Haraturiyan to export the data in CSV format.
-   - [Link to MIMIC-III benchmark suite](#)
+   -(https://github.com/HB-Dynamite/mimic3-benchmarks_AoOR_data_export)
 3. Save the exported data as mimic_complete.csv in the data/raw/MIMIC/ directory.
 
 ### Step 2: Set Up the Repository
@@ -37,7 +37,7 @@ This repository supports the research paper titled "Leveraging Interpretable Mac
 ```
 
 ## Structure: 
-TUDD-data-analysis/
+TUDD-data-analysis/ <\br>
 ├── data/
 │   └── raw/
 │       └── MIMIC/
