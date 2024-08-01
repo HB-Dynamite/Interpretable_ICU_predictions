@@ -110,7 +110,7 @@ For questions or feedback, please contact Lasse Bohlen at [lasse.bohlen@fau.de].
 
 ## Acknowledgments
 
-### MIMIC-III database
+### MIMIC-III Database
 ```bibtex
 @article{johnson2016mimic,
   title={MIMIC-III, a freely accessible critical care database},
@@ -121,5 +121,21 @@ For questions or feedback, please contact Lasse Bohlen at [lasse.bohlen@fau.de].
   pages={1--9},
   year={2016},
   publisher={Nature Publishing Group}
+}
+```
+
+### MIMIC-III Benchmarks
+```bibtex
+@article{Harutyunyan2019,
+  author={Harutyunyan, Hrayr and Khachatrian, Hrant and Kale, David C. and Ver Steeg, Greg and Galstyan, Aram},
+  title={Multitask learning and benchmarking with clinical time series data},
+  journal={Scientific Data},
+  year={2019},
+  volume={6},
+  number={1},
+  pages={96},
+  issn={2052-4463},
+  doi={10.1038/s41597-019-0103-9},
+  url={https://doi.org/10.1038/s41597-019-0103-9}
 }
 ```
