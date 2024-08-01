@@ -37,7 +37,7 @@ This repository supports the research paper titled "Leveraging Interpretable Mac
 ```
 
 ## Structure: 
-TUDD-data-analysis/ <br>
+Interpretable_ICU_predictions/ <br>
 ├── data/<br>
 │   └── raw/<br>
 │       └── MIMIC/<br>
@@ -45,10 +45,12 @@ TUDD-data-analysis/ <br>
 ├── hpo_configs/<br>
 ├── logging/<br>
 ├── output/<br>
-├── resutls/<br>
+├── results/<br>
 ├── scripts/<br>
-│   ├── experiment_1.py<br>
-│   ├── experiment_2.py<br>
+│   ├── classes<br>
+│   ├── utils<br>
+│   ├── experiment_X.py<br>
+│   ├── experiment_Y.py<br>
 │   └── ...<br>
 ├── env.yml<br>
 ├── README.md<br>
