@@ -34,6 +34,7 @@ If you use this work in your research, please cite:
   pages={[Pages]},
   doi={[DOI]}
 }
+```
 
 ## Prerequisites
 - Python 3.8+
