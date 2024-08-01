@@ -37,7 +37,6 @@ If you use this work in your research, please cite:
 ```
 
 ## Prerequisites
-- Python 3.8+
 - Access to the MIMIC-III database via PhysioNet
 - Conda for managing the environment
 
@@ -101,9 +100,6 @@ We welcome contributions to this project. Please follow these steps:
 3. Make your changes and commit ``(git commit -am 'Add some feature')``
 4. Push to the branch ``(git push origin feature-branch)``
 5. Create a new Pull Request
-
-## License
-This project is licensed under the MIT License.
 
 ## Contact
 For questions or feedback, please contact Lasse Bohlen at [lasse.bohlen@fau.de].
