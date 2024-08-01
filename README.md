@@ -101,6 +101,9 @@ We welcome contributions to this project. Please follow these steps:
 4. Push to the branch ``(git push origin feature-branch)``
 5. Create a new Pull Request
 
+## License
+This project is licensed under the MIT license.
+
 ## Contact
 For questions or feedback, please contact Lasse Bohlen at [lasse.bohlen@fau.de].
 
