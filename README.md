@@ -37,21 +37,21 @@ This repository supports the research paper titled "Leveraging Interpretable Mac
 ```
 
 ## Structure: 
-Interpretable_ICU_predictions/ <br>
-├── data/<br>
-│   └── raw/<br>
-│       └── MIMIC/<br>
-│           └── mimic_complete.csv<br>
-├── hpo_configs/<br>
-├── logging/<br>
-├── output/<br>
-├── results/<br>
-├── scripts/<br>
-│   ├── classes<br>
-│   ├── utils<br>
-│   ├── experiment_X.py<br>
-│   ├── experiment_Y.py<br>
-│   └── ...<br>
-├── env.yml<br>
-├── README.md<br>
-└── ...<br>
+Interpretable_ICU_predictions/
+├── data/
+│   └── raw/
+│       └── MIMIC/
+│           └── mimic_complete.csv
+├── hpo_configs/
+├── logging/
+├── output/
+├── results/
+├── scripts/
+│   ├── classes/
+│   ├── utils/
+│   ├── experiment_X.py
+│   ├── experiment_Y.py
+│   └── ...
+├── env.yml
+├── README.md
+└── ...
