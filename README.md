@@ -27,7 +27,7 @@ If you use this work in your research, please cite:
 ```bibtex
 @article{
   title={Leveraging Interpretable Machine Learning in Intensive Care},
-  author={[Author Names]},
+  author={Bohlen, Lasse and Rosenberger, Julian and Zschech, Patrick and Kraus, Mathias},
   journal={[Journal Name]},
   year={[Year]},
   volume={[Volume]},
