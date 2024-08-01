@@ -37,6 +37,7 @@ This repository supports the research paper titled "Leveraging Interpretable Mac
 ```
 
 ## Structure: 
+```
 Interpretable_ICU_predictions/
 ├── data/
 │   └── raw/
@@ -55,3 +56,4 @@ Interpretable_ICU_predictions/
 ├── env.yml
 ├── README.md
 └── ...
+```
