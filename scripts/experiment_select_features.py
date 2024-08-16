@@ -2,9 +2,8 @@
 from classes.Dataset import DataSet
 from classes.Pipeline import Pipeline
 
-import gc  # Import garbage collector interface
+import gc  # garbage collector
 
-# from sklearn.feature_selection import SelectKBest, f_classif, mutual_info_classif
 from pprint import pprint
 from utils.logger import log, update_logger
 from utils.config import DATA_DIR
@@ -16,13 +15,12 @@ dataset_params = {
     "train_size": 0.8,
     "random_state": 1991,
     "Preprocessor": {
+        # optinal steps to preprocess the data
         "steps": [
             # "remove_minors",
             # "adapt_max_age",
             "remove_missing_data",
-            # "outlier_removal",
         ],
-        "outlier_limits": "new_limits.json",
         "min_age": 18,
         "missing_rate": 0.5,
         "max_age": 90,
@@ -67,18 +65,16 @@ df.loc[:, "LOS3"] = df.loc[:, "LOS"] >= 3 * 24
 # create LOS7 Tagret
 df.loc[:, "LOS7"] = df.loc[:, "LOS"] >= 7 * 24
 
-# create list of num features to include
-
 # drop features with high missingrate (this is also done in preprocessing)
 missing_rate = df.isna().mean()
 unvalid_features = list(missing_rate[missing_rate > 0.5].index)
 
-# Filter columns for GCS subscales
+# filter columns for GCS subscales
 gcs_columns_to_delete = [
     col for col in df.columns if "GCS" in col and "GCST" not in col
 ]
 
-# also remove targets from the feature list
+# remove targets from the feature list
 targets_to_drop = targets + ["LOS"]
 
 # create list of all cols to remove (also cat features) added seperatly
@@ -112,4 +108,8 @@ for target in targets_to_iterate:
     data.prepare_dataset()
     data.select_features()
 
-    log.info("end of garbage collection")
+    # cleaning
+    log.info("Starting garbage collection")
+    del data
+    gc.collect()
+    log.info("End of garbage collection")
