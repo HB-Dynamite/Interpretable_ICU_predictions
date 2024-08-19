@@ -3,7 +3,7 @@ from classes.Dataset import DataSet
 from classes.Pipeline import Pipeline
 
 
-import gc  # Import garbage collector interface
+import gc  # garbage collector 
 
 from pprint import pprint
 from utils.logger import log, update_logger
@@ -17,15 +17,13 @@ dataset_params = {
     "train_size": 0.8,
     "random_state": 1991,
     "Preprocessor": {
+        # optinal steps to preprocess the data
         "steps": [
             # "remove_minors",
             # "adapt_max_age",
             "remove_missing_data",
             # "height_weight_switch",
-            # "outlier_removal",
         ],
-        # "bmi_limit": 100,
-        "outlier_limits": "limits.json",  # "new_limits.json",
         "min_age": 18,
         "missing_rate": 0.5,
         "max_age": 90,
@@ -52,6 +50,7 @@ pipe_params = {
             "XGB",
             "PYGAM",
         ],
+        # full hpo will run a long time
         # "hpo_file": "hpo_grid_study.json",
         "hpo_file": "default_hpo.json",
         "n_cv_folds": 5,
@@ -67,9 +66,9 @@ pipe_params = {
             # "RF",
             # "XGB",
         ],
-        "save_plots": True,
-        "save_plot_data": True,
-        "dist_plots": True,
+        "save_plots": False,
+        "save_plot_data": False,
+        "dist_plots": False,
         "show_plots": False,
     },
     "Memorizer": {
@@ -261,7 +260,7 @@ for target in targets:
                 pipe = Pipeline(data, pipe_params=pipe_params)
                 pipe.run()
 
-                # clean up my mess to make space for more memory
+                # cleaning
                 log.info("Starting garbage collection")
                 del data, pipe
                 gc.collect()
